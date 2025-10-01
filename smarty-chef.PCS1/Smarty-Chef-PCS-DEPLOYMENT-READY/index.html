@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Recipe Generator</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>🍽️ Smart Recipe Generator</h1>
+    <p class="subtitle">Type ingredients you have and get tasty recipes — quick & friendly.</p>
+  </header>
+
+  <main class="container">
+    <div class="card input-card">
+      <label for="ingredients">Ingredients (comma separated)</label>
+      <input id="ingredients" placeholder="e.g. rice, chicken, tomato, onion" />
+      <label for="diet">Dietary preference</label>
+      <select id="diet">
+        <option value="">None</option>
+        <option value="vegan">Vegan</option>
+        <option value="gluten-free">Gluten-Free</option>
+        <option value="keto">Keto</option>
+      </select>
+      <div class="row">
+        <button id="generateBtn">Generate Recipes</button>
+        <button id="saveAllBtn">Save All Recipes</button>
+      </div>
+    </div>
+
+    <div id="recipes" class="recipes-grid"></div>
+  </main>
+
+  <footer class="footer">Built with ❤️ — Smart Recipe Generator</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
